@@ -90,7 +90,7 @@ Conditions:
   Io1Set: !Equals
     - !Ref 'VolumeType'
     - io1
-  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-quickstart']
+  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-ia-us-east-1']
 Mappings:
   AWSAMIRegionMap:
     AMI:
@@ -221,7 +221,7 @@ Parameters:
     ConstraintDescription: Quick Start bucket name can include numbers, lowercase
       letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen
       (-).
-    Default: aws-quickstart
+    Default: aws-ia-us-east-1
     Description: S3 bucket name for the Quick Start assets. Quick Start bucket name
       can include numbers, lowercase letters, uppercase letters, and hyphens (-).
       It cannot start or end with a hyphen (-).
@@ -235,7 +235,7 @@ Parameters:
     ConstraintDescription: Quick Start key prefix can include numbers, lowercase letters,
       uppercase letters, hyphens (-), and forward slash (/). It cannot start with
       forward slash (/) because is it automatically added.
-    Default: quickstart-github-enterprise/
+    Default: cfn-ps-github-enterprise/
     Description: >-
       S3 key prefix for the Quick Start assets. Quick Start key prefix can include
       numbers, lowercase letters, uppercase letters, hyphens (-), and forward slash
