@@ -1,5 +1,5 @@
 project:
-  name: quickstart-github-enterprise
+  name: cfn-ps-github-enterprise
   owner: quickstart-eng@amazon.com
   package_lambda: false
   regions:
@@ -28,7 +28,7 @@ tests:
       ManagementPassword: $[taskcat_genpass_8]
       QSS3BucketName: $[taskcat_autobucket]
       QSS3BucketRegion: $[taskcat_current_region]
-      QSS3KeyPrefix: quickstart-github-enterprise/
+      QSS3KeyPrefix: cfn-ps-github-enterprise/
       SiteAdminUserEmail: none@none.com
       SiteAdminUserPassword: $[taskcat_genpass_8]
       SiteAdminUsername: gitadmin
