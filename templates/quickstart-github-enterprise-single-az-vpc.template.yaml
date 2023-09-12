@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: Create the Amazon VPC for the GitHub Quick Start.
+Description: Create the Amazon VPC for the GitHub Quick Start. (qs-1uia64p4m)
 Parameters:
   KeyPairName:
     Description: Public/private key pair
@@ -75,6 +75,8 @@ Resources:
       SubnetId: !Ref 'PublicSubnet'
       RouteTableId: !Ref 'PublicRouteTable'
 Outputs:
+  KeyPairName:
+    Value: !Ref KeyPairName
   VPCID:
     Value: !Ref 'VPC'
     Description: VPCID

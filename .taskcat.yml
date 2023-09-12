@@ -35,4 +35,4 @@ tests:
       VPCCIDR: 10.0.0.0/16
       VolumeType: io1
       ProvisionedIops: '1000'
-    template: templates/quickstart-github-enterprise-master.template
+    template: templates/quickstart-github-enterprise-main.template.yaml
